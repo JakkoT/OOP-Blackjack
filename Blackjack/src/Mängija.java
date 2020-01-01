@@ -5,6 +5,10 @@ public class Mängija extends Kaardid{
         super();
     }
 
+    /**
+     * Tagastab mängija kaardid ja nende summa ilusal String kujul
+     * @return Tagastab ilusa String
+     */
     @Override
     public String toString() {
         StringBuilder output = new StringBuilder("Mängija kaardid: ");
@@ -18,6 +22,9 @@ public class Mängija extends Kaardid{
 
     }
 
+    /**
+     * Teeb Mängijale algseadistuse ja lisab uue mängu jaoks veel ühe kaardi
+     */
     public void restart(){
         super.restart();
         lisaKaart();
