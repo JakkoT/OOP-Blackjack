@@ -12,6 +12,9 @@ public abstract class Kaardid{
         this.summa = 0;
     }
 
+    /**
+     * Lisab Random abiga ühe uue kaardi kaartide listi
+     */
     public void lisaKaart(){
         Random random = new Random();
         int uusKaart = random.nextInt(2, 12);
@@ -19,6 +22,10 @@ public abstract class Kaardid{
         this.viimaneKaart = uusKaart;
     }
 
+    /**
+     * Kontrollib, kas kaartide summa on üle 21
+     * @return tagastab True, kui summa on üle 21. Kui on alla siis False
+     */
     public boolean ule21(){
         if (getSumma() > 21){
             return true;
